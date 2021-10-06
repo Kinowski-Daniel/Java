@@ -1,0 +1,56 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	  int wybor;
+	  Scanner keyboard=new Scanner(System.in);
+	  
+	  System.out.print("wpisz watrości w zaleności od preferencji 1-wegan, 2-wegetarian , 3-bezglutenu, 4-wegan i bezglutenu, 5-wegetarian i bezglutenu:");
+	  wybor=keyboard.nextInt();
+	
+	  switch(wybor){
+	      case 1:
+	          System.out.println("możesz iść do restauracji Pizzeria przy Dworcowej, Kawiarni na Rogu, Włoskie Speciały i Kuchnia u Szefa");
+	          break;
+	     
+	     case 2:
+	         System.out.println("możesz iść do restauracji Kawiarnia na Rogu, i Kuchnia u Szefa");
+	         break;
+	   
+	     case 3:
+	         System.out.println("możesz iść do restauracji Kawiarnia na Rogu, i Kuchnia u Szefa");
+	         break;
+	  
+	     case 4:
+	         System.out.println("możesz iść do restauracji Kawiarnia na Rogu, i Kuchnia u Szefa");
+	         break;
+	         
+	     case 5: System.out.println("możesz iść do restauracji Kawiarnia na Rogu, i Kuchnia u Szefa");
+	     break;
+	         
+	         default:
+	         System.out.println("możesz iść do każdej z restauracji");     
+	        
+	         
+	  }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
