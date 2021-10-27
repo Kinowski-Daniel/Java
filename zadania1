@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    int x;
+	    int y=1;
+	   
+      System.out.print("Podaj liczbę");
+      
+       Scanner keyboard=new Scanner(System.in);
+	   x=keyboard.nextInt();
+	  
+	  for(int i=1; y< 1000; i++){
+	      System.out.print(y+"\n");
+	      y=x*i;
+	  }
+	  
+	  
+	  
+	  
+	  
+	  
+	}
+}
