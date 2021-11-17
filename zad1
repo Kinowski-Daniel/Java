@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.io.*;
+ 
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+
+        String Name;
+        String Surname;
+        String Wiek;
+        int numZnaj;
+        
+        Scanner keyboard = new Scanner(System.in);
+        
+        System.out.print("ile jest osob w dzienniku");
+         numZnaj = keyboard.nextInt();
+         
+         keyboard.nextLine();
+         
+         filename = "dzienni.txt";
+         
+PrintWriter outputFile = new PrintWriter(filename);
+         
+         for(int i = 1; i <= numZnaj; i++){
+             System.out.print("dane osoby danego numerka z dziennika: " +i+ "\n imie: ");
+             Name = keyboard.nextLine();
+             System.out.print("nazwisko: ");
+             Surname = keyboard.nextLine();
+             System.out.print("wiek: ");
+             Wiek = keyboard.nextLine();
+             
+             outputFile.println(i+ "" +Name+ "" +Surname+ " " + Wiek);
+         }
+         outputFile.close();
+         System.out.println("Dane zapisane sa w pliku.");
+         
+    } 
+}
