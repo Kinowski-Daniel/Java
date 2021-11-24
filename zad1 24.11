@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a;
+        int b;
+        int c; 
+        
+         Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj  1 liczbe:");
+          a = scanner.nextInt();
+             System.out.println("Podaj  2 liczbe:");
+          b = scanner.nextInt();
+             System.out.println("wybierz 1-dzielenie 2-mnozenie 3-dodawanie 4-odejmowanie");
+          c = scanner.nextInt();
+          
+                switch(c){
+            case 1:
+                dzielenie();
+            break;
+            case 2:
+               mnozenie();
+                break;
+            case 3:
+                dodawanie();
+            break;
+            case 4:
+                mnozenie();
+                break;
+            
+            default:
+            System.out.println("error");
+                
+                
+        }
+    }
+    
+        
+    
+public static void dzielenie(){
+    main();
+              double d = a / b;
+          }
+          
+  public static  void mnozenie(){
+      main();
+              int e =  a * b;
+          }
+          
+ public static void dodawanie(){
+     main();
+              int f = a + b;
+          }
+          
+ public  static void odejmowanie(){
+     main();
+              int g = a - b;
+ }
